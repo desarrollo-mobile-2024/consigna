@@ -112,6 +112,22 @@ ion-title, ion-list-header .texto-dancing-script
 font-family: 'Dancing Script', cursive;
 }
 
+/*para el icono de campana */
+.icon-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 10px; /* Altura del icono */
+  margin-top: 30px; /* Espacio desde el último boton "horarios"*/
+  margin-right: 40px;
+}
+
+/* Estilo para el icono de campana */
+.campana-icon {
+  font-size: 40px; /* Tamaño del icono */
+  color: #ffffff; /* Color del icono */
+}
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
