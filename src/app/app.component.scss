@@ -1,0 +1,55 @@
+ion-app {
+    ion-menu {
+      --width: 250px;
+      --background: #F6F0F0;
+      --border-color: #ccc;
+      
+      ion-header {
+        --background: #767474;
+        ion-toolbar {
+          --background: #767474;
+          --color: rgb(255, 232, 27);
+          ion-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+        }
+      }
+      
+      ion-content {
+        --background: #F6F0F0;
+  
+        ion-list {
+          padding: 0;
+          --background: #F6F0F0;
+  
+          ion-menu-toggle {
+            --background: #F6F0F0;
+  
+            ion-item {
+              --background: #F6F0F0;
+              --color: #333;
+              --border-color: #e0e0e0;
+              
+              &[button] {
+                margin: 0;
+                font-size: 1rem;
+                ion-label {
+                  margin-left: 10px;
+                }
+              }
+              
+              &:hover {
+                --background: #08d6f1;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    ion-router-outlet {
+      // Estilos para el contenido principal de la aplicación
+      padding: 16px;
+    }
+  }
