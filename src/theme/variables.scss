@@ -5,7 +5,7 @@
 :root {
   /** primary **/
   /* Añadido para cambiar el color de fondo */
-  --ion-background-color: #40065c; /* para cambiar elColor de fondo */
+  --ion-background-color: #CE72C5c1; /* para cambiar elColor de fondo */
   --ion-color-primary: #ffffff;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
@@ -96,7 +96,7 @@ ion-button {color: #000000;/* Cambia color texto de los botones de menu lateral 
   --padding-end: 16px;  
 }
 .sc-ion-label-md-s>p {
-  color: var(--ion-color-step-600, #b4b4b4); /* Cambia el color del texto en la descripcion de los productos */
+  color: var(--ion-color-step-600, #222222); /* Cambia el color del texto en la descripcion de los productos */
 }
 .ver-boton {
   margin-left: 10px;
