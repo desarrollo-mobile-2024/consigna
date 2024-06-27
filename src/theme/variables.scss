@@ -3,6 +3,7 @@
 
 /** Ionic CSS Variables **/
 :root {
+<<<<<<< HEAD
   /** primary **/
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,12 @@
 >>>>>>> 7a7e7a416ce89cc9983b7e55ee589b390fecce34
 >>>>>>> 8e95b452ab59b6f8334a8473a7a7a5b93290f530
   --ion-color-primary-rgb: 56, 128, 255;
+=======
+  /** p/* Añadido para cambiar el color de fondo */
+  --ion-background-color: #CE72C5c1; /* para cambiar elColor de fondo */ 
+  --ion-color-primary: #6e1273
+--ion-color-primary-rgb: 56, 128, 255;
+>>>>>>> 96f50172bb4ed83d3e7822fecceafbcd224a7544
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
