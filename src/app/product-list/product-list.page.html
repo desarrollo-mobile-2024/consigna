@@ -10,35 +10,20 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-<<<<<<< HEAD
-      <ion-title size="large">Products</ion-title>
-=======
       <ion-title size="large">Servicios</ion-title>
->>>>>>> origin/ezequiel
     </ion-toolbar>
   </ion-header>
 
   <ion-list>
-<<<<<<< HEAD
-    <ion-list-header>
-      <ion-label>Products Destacados</ion-label>
-    </ion-list-header>
-    @for (products of products; track product._id) {
-=======
 
     @for (product of products; track product._id) {
->>>>>>> origin/ezequiel
     <ion-item>
       <ion-thumbnail slot="start">
         <img [src]="product.image" [alt]="product.name">
       </ion-thumbnail>
       <ion-label>
-<<<<<<< HEAD
-        <h2>{{products.name}}</h2>
-=======
         <h2>{{product.name}}</h2>
 
->>>>>>> master
         <p>{{product.description}}</p>
 
         <p>{{ '$' + product.price }}</p>
