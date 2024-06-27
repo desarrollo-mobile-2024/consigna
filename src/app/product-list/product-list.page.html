@@ -10,14 +10,12 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Productos</ion-title>
+      <ion-title size="large">Servicios</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-list>
-    <ion-list-header>
-      <ion-label>Productos Destacados</ion-label>
-    </ion-list-header>
+
     @for (product of products; track product._id) {
     <ion-item>
       <ion-thumbnail slot="start">
@@ -26,7 +24,11 @@
       <ion-label>
         <h2>{{product.name}}</h2>
         <p>{{product.description}}</p>
+<<<<<<< HEAD
         <p>{{product.price}}</p>
+=======
+        <p>{{ '$' + product.price }}</p>
+>>>>>>> 3bf94b2dc7efa31ed305bf500e630aa403629d4f
       </ion-label>
     </ion-item>
     }

@@ -2,23 +2,36 @@
   <ion-menu side="start" menuId="m1" contentId="main">
     <ion-header>
       <ion-toolbar>
-        <ion-title>
-          Aida Joyas
-        </ion-title>
+        <ion-title class="texto-dancing-script center-text">JessyStilistas</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-menu-toggle>
-          <ion-item button [routerLink]="['/main']">
-            <ion-label>Aida</ion-label>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item>
+            <ion-button [routerLink]="['/main']" class="button-ancho">Agenda</ion-button>
+            <ion-button color="danger" size="small" class="ver-boton">Ver</ion-button>
           </ion-item>
-          <ion-item button [routerLink]="['/product-list']">
-            <ion-label>Productos</ion-label>
+          <ion-item>
+            <ion-button [routerLink]="['/main']" class="button-ancho">Precios</ion-button>
+            <ion-button color="danger" size="small" class="ver-boton">Ver</ion-button>
+          </ion-item>
+          <ion-item>
+            <ion-button [routerLink]="['/main']" class="button-ancho">Trabajos</ion-button>
+            <ion-button color="danger" size="small" class="ver-boton">Ver</ion-button>
+          </ion-item>
+          <ion-item>
+            <ion-button [routerLink]="" class="button-ancho">Horarios</ion-button>
+            <ion-button color="danger" size="small" class="ver-boton">Ver</ion-button>
           </ion-item>
         </ion-menu-toggle>
       </ion-list>
+      <div class="icon-container">
+        <ion-icon name="notifications-outline" class="campana-icon"></ion-icon>
+      </div>
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
+
+
