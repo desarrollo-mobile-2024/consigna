@@ -3,9 +3,10 @@
 
 /** Ionic CSS Variables **/
 :root {
-  /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
+  /** Añadido para cambiar el color de fondo */
+  --ion-background-color: #CE72C5c1; /* para cambiar elColor de fondo */ 
+  --ion-color-primary: #ffffff;
+--ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
@@ -74,6 +75,56 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+.header-md {
+  --ion-background-color: #c60505;
+  --box-shadow:0 2px 4px -1px rgba(251, 250, 250, 0.935) 
+}/* cambia el Color del zocalo de encabezado */
+
+ion-title {color: #ffffff; /* Cambia color texto encabezado */} 
+ion-item {color: #ffffff; /* Cambia color texto en el titulo de los productos */} 
+ion-button {color: #000000;/* Cambia color texto de los botones de menu lateral */}
+
+.center-text {
+  text-align: center;
+  width: 95%; } /* Centra el texto superior en menu lateral */
+
+.button-ancho {
+  width:75%; 
+  --padding-start: 16px; /* Ajusta el tamaño de los botones*/
+  --padding-end: 16px;  
+}
+.sc-ion-label-md-s>p {
+  color: var(--ion-color-step-600, #222222); /* Cambia el color del texto en la descripcion de los productos */
+}
+.ver-boton {
+  margin-left: 10px;
+  --background: #9b0202; /* Color del boton ver */
+  --color: #ffffff; /* Color del texto del boton ver */
+  height: 30px; /* Altura del botón */
+  font-size: 12px; /* Tamaño de la fuente */}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* Importa la fuente Dancing Script cursiva desde Google Fonts y la Aplica en ion-title */
+ion-title, ion-list-header .texto-dancing-script 
+ {
+font-family: 'Dancing Script', cursive;
+}
+
+/*para el icono de campana */
+.icon-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 10px; /* Altura del icono */
+  margin-top: 30px; /* Espacio desde el último boton "horarios"*/
+  margin-right: 40px;
+}
+
+/* Estilo para el icono de campana */
+.campana-icon {
+  font-size: 40px; /* Tamaño del icono */
+  color: #ffffff; /* Color del icono */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -179,9 +230,9 @@
     --ion-color-step-900: #e6e6e6;
     --ion-color-step-950: #f2f2f2;
 
-    --ion-item-background: #000000;
+    --ion-item-background: #ffffff;
 
-    --ion-card-background: #1c1c1d;
+    --ion-card-background: #ffffff;
   }
 
   .ios ion-modal {
@@ -189,8 +240,7 @@
     --ion-toolbar-background: var(--ion-color-step-150);
     --ion-toolbar-border-color: var(--ion-color-step-250);
   }
-
-
+  /* NUEVO: Estilos para el banner y el menú lateral */
   /*
    * Material Design Dark Theme
    * -------------------------------------------
@@ -205,7 +255,7 @@
 
     --ion-border-color: #222222;
 
-    --ion-color-step-50: #1e1e1e;
+    --ion-color-step-50: #ffffff;
     --ion-color-step-100: #2a2a2a;
     --ion-color-step-150: #363636;
     --ion-color-step-200: #414141;
