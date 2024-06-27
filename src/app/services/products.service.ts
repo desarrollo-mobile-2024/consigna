@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 
-export interface Product {
+export interface Service {
   _id: string;
   name: string;
   description: string;
@@ -12,7 +12,7 @@ export interface Product {
   active: boolean;
 }
 
-type ApiResponse = {products:Product[] }
+type ApiResponse = {products:Service[] }
 
 @Injectable({
   providedIn: 'root'
@@ -21,10 +21,11 @@ export class ProductsService {
 
   httpClient = inject(HttpClient);
 
-  getAll(): Promise<Product[]> {
+  getAll(): Promise<Service[]> {
     return firstValueFrom(
-      this.httpClient.get<Product[]>('https://666c953d49dbc5d7145e8513.mockapi.io/Servicio')
+      this.httpClient.get<Service[]>('https://666c953d49dbc5d7145e8513.mockapi.io/Servicio')
     )
   }
+
 
 }
