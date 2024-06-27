@@ -2,7 +2,7 @@
 
 /* Estilo para el ion-header */
 ion-header {
-    background: #FF7A00;
+    background: #328E3C;
     color: white;
     ion-toolbar {
       --background: transparent;
@@ -12,7 +12,7 @@ ion-header {
       }
       ion-buttons {
         ion-menu-button {
-          color: rgb(186, 10, 10);
+          color: rgb(0, 0, 0);
         }
       }
     }
@@ -20,7 +20,7 @@ ion-header {
   
   /* Estilo para el ion-content */
   ion-content {
-    --background: #1d0303;
+    --background: #fcf8f8;
     ion-header {
       ion-toolbar {
         ion-title {
@@ -38,7 +38,7 @@ ion-header {
       ion-label {
         font-size: 1.2rem;
         font-weight: bold;
-        color: #333;
+        color: #000000;
       }
     }
     
