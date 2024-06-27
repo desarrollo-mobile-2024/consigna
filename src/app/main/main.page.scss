@@ -1,0 +1,88 @@
+/* styles.scss */
+
+/* Estilo para el ion-header */
+ion-header {
+  background: #F5A61D;
+  color: white;
+  ion-toolbar {
+    --background: #4f4f4f; /* Fondo gris para el toolbar */
+    ion-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #F5A61D; /* Color que contrasta con el gris del fondo */
+    }
+    ion-buttons {
+      ion-menu-button {
+        color: white; /* Color blanco para contrastar con el fondo gris */
+      }
+    }
+  }
+}
+
+/* Estilo para el ion-content con degradado */
+ion-content {
+  --background: linear-gradient(to bottom, #F5A61D, #ffffff);
+  ion-header {
+    ion-toolbar {
+      ion-title {
+        font-size: 2rem;
+        color: #F5A61D; /* Color que contrasta con el gris */
+      }
+    }
+  }
+}
+
+/* Estilo para las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body, ion-content {
+  font-family: 'Roboto', sans-serif;
+}
+
+ion-title, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+ion-title {
+  font-size: 16px; /* Ajustar según sea necesario */
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18.72px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13.28px;
+}
+
+h6 {
+  font-size: 10.72px;
+}
+
+/* Estilo para el ion-list */
+ion-list {
+  margin: 0 16px;
+  ion-list-header {
+    ion-label {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+  
+  ion-item {
+    --background: linear
