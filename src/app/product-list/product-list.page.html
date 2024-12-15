@@ -3,20 +3,20 @@
     <ion-buttons slot="start">
       <ion-menu-button menu="m1"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Productos</ion-title>
+    <ion-title>Reservas y Productos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Productos</ion-title>
+      <ion-title size="large">Reservas y Productos</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-list>
     <ion-list-header>
-      <ion-label>Productos Destacados</ion-label>
+      <ion-label>Destacados</ion-label>
     </ion-list-header>
     @for (product of products; track product._id) {
     <ion-item>
